@@ -35,9 +35,17 @@
       font-size: 14px;
     }
 
+	.menu {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+
     .btn {
       display: block;
       width: 100%;
+	  max-width: 200px;   /* INI KUNCINYA */
+	  text-align: center;
       padding: 14px;
       margin-bottom: 15px;
       border-radius: 10px;
@@ -67,11 +75,12 @@
 <body>
 
   <div class="container">
-    <h1>Program Keselamatan dan<br>Transportasi Jalan</h1>
-    <p>TEST MATERI</p>
+  <h1>Program Keselamatan Transportasi Jalan</h1>
+  <p>TEST MATERI</p>
 
-    <a href="register.html" class="btn">REGISTER</a>
-    <a href="login.html" class="btn">LOGIN</a>
+  <div class="menu">
+    <a href="register.html" class="btn btn-primary">REGISTER</a>
+    <a href="login.html" class="btn btn-primary">LOGIN</a>
     <a href="pretest.html" class="btn btn-secondary">PRE TEST</a>
     <a href="posttest.html" class="btn btn-secondary">POST TEST</a>
     <a href="#" class="btn btn-disabled">LIHAT HASIL TEST</a>
@@ -79,5 +88,3 @@
 
 </body>
 </html>
-
-
